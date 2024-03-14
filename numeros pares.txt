@@ -1,0 +1,33 @@
+#include <cmath>
+#include <iomanip>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+  int n, vet[n], qtePares;
+
+  cout << "Quanto numeros voce vai digitar?" << endl;
+  cin >> n;
+
+  for (int i = 0; i < n; i++) {
+    cout << "digite um numero: " << endl;
+    cin >> vet[i];
+  }
+
+  qtePares = 0;
+
+  cout << endl;
+  cout << "NUMEROS PARES:" << endl;
+  for (int i = 0; i < n; i++) {
+    if (vet[i] % 2 == 0) {
+      cout << vet[i] << " " << endl;
+      qtePares = qtePares + 1;
+    }
+  }
+  cout << "Quantidade de pares = " << qtePares << endl;
+
+  return 0;
+}

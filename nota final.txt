@@ -1,0 +1,29 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+
+int main()
+{
+    float nota1, nota2, notaFinal;
+
+    cout << "Digite a primeira nota: " << endl;
+    cin >> nota1;
+    cout << "Digite a segunda nota: " << endl;
+    cin >> nota2;
+
+    notaFinal = nota1 + nota2;
+
+    if (notaFinal < 60){
+      cout << "Nota Final: " << notaFinal << endl;
+      cout << "REPROVADO" << endl;
+    }
+    else{
+      cout << "NOTA FINAL: " << notaFinal << endl;
+    }
+    
+    
+    return 0;
+}

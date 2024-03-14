@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+
+int main()
+{
+    int valor1, valor2, valor3, menor;
+
+    cin >> valor1;
+    cin >> valor2;
+    cin >> valor3;
+
+    if((valor1 < valor2) && valor1 <valor3){
+      cout << "MENOR: " << valor1 << endl;
+    }
+    if (valor2 < valor3){
+      cout << "MENOR: " << valor2 << endl;
+    }
+    else{
+      cout << "MENOR: " << valor3;
+    }
+    
+    return 0;
+}

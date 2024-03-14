@@ -1,0 +1,34 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+int main(){
+
+int n, maiorIdade, posicaoMaior;
+
+cout << "Quantas pessoas voce vai digitar?" << endl;
+cin >> n;
+string nome[n];
+int idade[n];
+
+for (int i = 0; i < n; i++){
+  cout << "Dados da "<< i + 1 << "a pessoa:" << endl;
+  cout << "Nome: "<< endl;
+  cin >> nome[i];
+  cout << "Idade: "<< endl;
+  cin >> idade[i];
+}
+maiorIdade = idade[0];
+posicaoMaior = 0;
+
+for ( int i = 1; i < n; i ++){
+  if (idade[i] > maiorIdade){
+    maiorIdade = idade[i];
+    posicaoMaior = i;
+  }
+}
+cout << "Pessoa mais velha: " << nome[posicaoMaior] << endl;
+
+return 0;
+}

@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() {
+
+  string nome;
+  float valor, pagamento;
+  int horas;
+
+  cout << "Nome: " << endl;
+  getline (cin, nome);
+
+  //cin.ignore();
+  
+  //getline (cin, nome);
+
+  //cin.ignore();
+  cout << "Valor hora: " << endl;
+  cin >> valor;
+
+  cout << "horas trabalhadas: " << endl;
+  cin >> horas;
+
+  pagamento = valor * horas;
+
+  cout << "O pagamento para " << nome << " deve ser " << pagamento<< endl;
+
+
+  }

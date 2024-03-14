@@ -1,0 +1,39 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    int n, somaPares = 0, nPares = 0;
+    float mediaPares;
+
+    cout << "Quantos elementos vai ter o vetor?" << endl;
+    cin >> n;
+
+    int vetor[n];
+
+    for ( int i = 0; i < n; i++){
+      cout << "digite um numero: " << endl;
+      cin >> vetor[i];
+    }
+    
+
+    for ( int i = 0; i < n; i++){
+      if (vetor[i] % 2 == 0){
+       somaPares = somaPares + vetor[i];
+       nPares = nPares + 1;
+      }
+    }
+    if (nPares ==0){
+      cout << "nenhum numero par" << endl;
+    }
+    else{
+      mediaPares = (float)somaPares / nPares;
+
+      cout << fixed << setprecision(1);
+      cout << "MEDIA A PARES = " << mediaPares << endl;
+    }
+    return 0;
+}

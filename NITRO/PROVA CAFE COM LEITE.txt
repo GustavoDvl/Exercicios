@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int n, maior = 1, subsequencia = 1;
+
+    cin >> n;
+
+    int sequencia[n];
+
+    for (int i=0; i<n; i++) {
+        cin >> sequencia[i];
+    }
+
+    for (int i=0; i<n - 1; i++) {
+        if (sequencia[i] < sequencia[i+1] ) {
+            maior++;
+        if (maior >= subsequencia ) {
+            subsequencia = maior;
+        } 
+        }else {
+            maior = 1;
+        }
+        }
+        
+    cout << subsequencia << endl;
+
+    return 0;
+}

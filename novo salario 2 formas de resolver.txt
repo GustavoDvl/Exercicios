@@ -1,0 +1,81 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+
+int main()
+{
+  float salario, novoSalario, aumento, porcentagem;
+
+  cout << "Digite o salario da pessoa: " << endl;
+  cin >> salario;
+
+  
+
+  if (salario <= 1000){
+    novoSalario = salario * 20 / 100 + salario;
+    cout << "Porcentagem: 20%" << endl;
+  }
+  else if (salario <= 3000){
+    novoSalario =  salario * 15 / 100 + salario;
+    cout << "Porcentagem: 15%" << endl;
+  }
+  else if (salario >= 8000){
+    novoSalario = salario * 10 / 100 + salario;
+    cout << "Porcentagem: 10% " << endl;
+  }
+  else {
+    novoSalario = salario * 05 / 100 + salario;
+    cout << "Porcentagem: 5% " << endl;
+  }
+  cout << fixed << setprecision(2);
+  cout <<"O novo Salário é: " << novoSalario << endl;
+  cout << "Aumento: " << novoSalario - salario << endl;
+  
+
+    return 0;
+}
+
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+
+int main()
+{
+  float salario, novoSalario, aumento, porcentagem;
+
+  cout << "Digite o salario da pessoa: " << endl;
+  cin >> salario;
+
+  
+
+  if (salario <= 1000){
+    porcentagem = 20;
+  }
+  else if (salario <= 3000){
+    porcentagem = 15;
+  }
+  else if (salario >= 8000){
+    porcentagem = 10;
+  }
+  else {
+    porcentagem = 0.5;
+  }
+  aumento = salario * porcentagem / 100;
+  novoSalario = salario + aumento;
+  
+  cout << fixed << setprecision(2);
+  cout <<"O novo Salário é: " << novoSalario << endl;
+  cout << "Aumento: R$ " << aumento << endl;
+  cout << fixed << setprecision(0);
+  cout << "Porcentagem: " << porcentagem << "%" << endl;
+  
+
+    return 0;
+}

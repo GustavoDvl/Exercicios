@@ -1,0 +1,24 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+
+int main()
+{
+
+  int senha;
+
+  cout << "Digite a senha: " << endl;
+  cin >> senha;
+
+  while (senha != 2312){
+    cout << "senha inválida! Tente novamente" << endl;
+    cin >> senha;
+    }
+    cout << "ACESSO PERMITIDO" << endl;
+  
+      
+    return 0;
+}

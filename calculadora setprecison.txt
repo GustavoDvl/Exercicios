@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+    
+    char operacao;
+    cin >> operacao;
+
+    float a, b;
+    cin >> a >> b;
+    
+    if (operacao == '+'){
+      cout << a + b << endl;
+    } else if( operacao == '-'){
+      cout << a - b << endl;
+    } else if(operacao == '*'){
+      cout << a * b;
+    } else{
+      setprecision(1);
+      cout << fixed << setprecision(1) <<  a / b << endl;
+    }
+  
+  
+  }

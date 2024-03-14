@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+
+int main()
+{
+    float medida;
+  
+    cout << "Digite a medida da glicose: " << endl;
+    cin >> medida;
+
+    if ( medida <= 100){
+      cout << "Classificação: normal" << endl;
+    } 
+    else if (medida <= 140){
+      cout << "Classificação: elevado" << endl;
+    } 
+    else{
+      cout << "Classificação: Diabetes" << endl;
+    }
+    
+    return 0;
+}

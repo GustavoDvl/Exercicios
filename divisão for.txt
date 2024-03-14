@@ -1,0 +1,38 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+
+int main(){
+  
+    
+    float divisao, n, x, y;
+
+    cout << "Quantos casos voce vai digitar: ";
+    cin >> n;
+
+    for ( int i = 0; i < n; i++){
+      cout << "entre com o numerador: ";
+      cin >> x;
+      cout << "entre com o denominador: ";
+      cin >> y;
+
+     
+      if ( y == 0 ){
+      cout << "IMPOSSIVEL DIVISAO" << endl;
+      }
+      else{
+        divisao = x / y;
+        cout << fixed << setprecision(2);
+        cout << "DIVISAO: " << divisao << endl;
+      }
+      
+      
+    }
+      
+ return 0;
+   
+}

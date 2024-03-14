@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+
+  int n, i;
+  
+  cout << "Quantos números você vai digitar?" << endl;
+  cin >> n;
+
+  int vet[n];
+
+  for ( i = 0; i < n; i++){
+    cout << "Digite um numero: " << endl;
+    cin >> vet[i];
+  }
+  
+  cout << "Numeros negativos: " << endl;
+  
+  for ( i = 0; i < n; i++)
+  if (vet[i] < 0 ){
+   cout << vet[i] << endl;
+  }
+   
+ return 0;
+}
+    
+    

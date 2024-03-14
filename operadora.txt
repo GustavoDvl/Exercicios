@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+
+int main()
+{
+    int minutos;
+    float valorPago = 50.00;
+
+    cout << "Digite a quantidade de minutos: " << endl;
+    cin >> minutos;
+
+    if( minutos >100){
+      valorPago = valorPago + 2 * (minutos - 100);
+    }
+    cout << valorPago << endl;
+    
+    return 0;
+}

@@ -1,0 +1,41 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+
+int main(){
+  
+  int n, posMaior;
+  float maior;
+  
+
+  cout << "Quantos numeros voce vai digitar?" << endl;
+  cin >> n;
+  
+  float vet[n];
+
+    for (int i = 0; i < n; i++){
+      cout << "Digite um numero: " << endl;
+      cin >> vet[i];
+    }
+
+  maior = vet[n];
+  posMaior = 0;
+
+  for(int i = 0; i < n; i++){
+    if (vet[i] > maior){
+      maior = vet[i];
+      posMaior = i;
+    }
+  }
+  cout << endl;
+  cout << fixed << setprecision(2);
+  cout << "Maior valor = " << maior << endl;
+  cout << "Posicao do maior valor= " << posMaior << endl;
+ 
+  return 0;
+   
+}

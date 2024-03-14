@@ -1,0 +1,41 @@
+#include <iostream>
+#include <iomanip>
+
+
+using namespace std;
+
+  void calculaNovoSalario(float salario, int percentual){
+  float novoSalario = salario * (1 + (float)percentual / 100);
+  float reajuste = salario * percentual / 100;
+  
+  cout << fixed << setprecision (2);
+  
+  cout <<"Novo salario: " << fixed << setprecision(2) << novoSalario << endl;
+  cout <<"Reajuste ganho: " << fixed << setprecision(2) << reajuste << endl;
+  cout <<"Em percentual: " << fixed << setprecision(0) << percentual << " %"; 
+}
+int main() {
+
+float salario;
+  
+cin >> salario;
+
+if(salario <= 400) {
+  calculaNovoSalario (salario,15);
+  
+}else if(salario <= 800){
+  calculaNovoSalario(salario, 12);
+  
+} else if(salario <=1200){
+  calculaNovoSalario (salario, 10);
+  
+} else if(salario <=2000){
+  calculaNovoSalario (salario, 7);
+ 
+} else{
+  calculaNovoSalario (salario, 4);
+}
+  
+
+
+  }

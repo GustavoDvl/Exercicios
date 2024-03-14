@@ -1,0 +1,52 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main(){
+  
+  int n, qtdHomens = 0, qtdMulheres = 0;
+  float menorAtura, maiorAltura, alturaFemMedia, alturaFemTotal = 0;
+
+  cout << "Quantas pessoas serao digitadas?" << endl;
+  cin >> n;
+
+  float altura[n];
+  char genero[n];
+  
+  for (int i=0; i<n; i++){
+    cout << "Altura da " << i + 1 << "a pessoa:" << endl;
+    cin >> altura[i];
+    cout << "Genero da " << i + 1 << "a pessoa" << endl;
+    cin>> genero[i];
+  }
+  menorAtura = altura[0];
+  maiorAltura = altura[0];
+
+  for ( int i = 1; i<n; i++){
+    if (altura[i]> maiorAltura){
+      maiorAltura = altura[i];
+    }
+    if(altura[i] < menorAtura){
+      menorAtura = altura[i];
+    }
+  }
+
+  for ( int i=0; i<n; i++){
+    if (genero[i]=='M'){
+      qtdHomens++;
+    }
+    else{
+      qtdMulheres++;
+      alturaFemTotal = alturaFemTotal + altura[i];
+    }
+  }
+      alturaFemMedia = alturaFemTotal / qtdMulheres;
+      cout << fixed << setprecision(2);
+      cout << "Menor altura = " << menorAtura << endl;
+      cout << "Maior Atura = " << maiorAltura << endl;
+      cout << "Media de altura das mulheres = " << alturaFemMedia << endl;
+      cout << "Numeros de homens = " << qtdHomens << endl;
+
+  return 0;
+}

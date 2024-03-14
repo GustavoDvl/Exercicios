@@ -1,0 +1,30 @@
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+
+
+using namespace std;
+
+int main() {
+
+  int x, soma;
+
+  x = 0;
+
+    cout <<"digite um numero inteiro" << endl;
+    cin >> x;
+
+  while (x != 0){
+
+  if( x % 2 != 0){
+    x = x + 1;
+  }
+  soma = 5 * x + 20;
+    
+    cout << soma << endl;
+
+    cout <<"digite um numero inteiro" << endl;
+    cin >> x;
+
+    }
+  }

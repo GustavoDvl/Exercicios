@@ -1,0 +1,34 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+
+int main()
+{
+    float a, b, c, quadrado, triangulo, trapezio;
+
+    cout << "Digite a media A: " << endl;
+    cin >> a;
+
+    cout << "Digite a media B: " << endl;
+    cin >> b;
+
+    cout << "Digite a media C: " << endl;
+    cin >> c;
+
+    quadrado = a * a;
+    triangulo = (a * b) / 2;
+    trapezio = (a + b) * c / 2;
+
+    cout << fixed << setprecision(4);
+    cout << "AREA DO QUADRADO = " << quadrado << endl;
+    cout << "AREA DO TRIANGULO = " << triangulo << endl;
+    cout << "AREA DO TRAPEZIO = " << trapezio << endl;  
+  
+    
+    
+    
+    return 0;
+}

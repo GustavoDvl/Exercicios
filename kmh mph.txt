@@ -1,0 +1,14 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+    float n;
+    cin >> n;
+    n = n / 0.62137;
+
+    cout << fixed <<setprecision(2) << n << endl;
+  
+  }

@@ -1,0 +1,42 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+    int code, qtd;
+
+    cout << "Enter a code" << endl;
+    cin >> code;
+    cout << "Enter a quantity" << endl;
+    cin >> qtd;
+
+    cout << fixed << setprecision(2);
+
+    switch (code){
+    case 1: 
+    cout << "Valor a pagar R$: ";
+    cout << 5.00 * qtd << endl;
+
+    break;
+    case 2: 
+    cout << "Valor a pagar R$: ";
+    cout << 3.50 * qtd << endl;
+    break;
+    case 3: 
+    cout << "Valor a pagar R$: ";
+    cout << 4.80 * qtd << endl;
+    break;
+    case 4: 
+    cout << "Valor a pagar R$: ";
+    cout << 8.90 * qtd << endl;
+    break;
+    case 5: 
+    cout << "Valor a pagar R$: ";
+    cout << 7.32 * qtd << endl;
+    break;
+
+    }
+    return 0;
+}

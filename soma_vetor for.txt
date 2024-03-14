@@ -1,0 +1,44 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+
+  int n, i;
+  float soma, media;
+
+  cout << "Quantos números você vai digitar?" << endl;
+  cin >> n;
+
+  float vet[n];
+
+  for ( int i = 0; i < n; i++){
+    cout << "Digite um numero: " << endl;
+    cin >> vet[i];
+  }
+    cout <<"Valores"; 
+   
+  for ( int i = 0; i < n; i++){
+    cout << fixed << setprecision(1);
+    cout << "  " << vet[i];
+  }
+  soma = 0;
+   for ( int i = 0; i < n; i++){
+     soma = soma + vet[i];
+     cout <<" ";
+    
+   }
+    cout << fixed << setprecision(2);
+    cout << "SOMA = ";
+    cout << soma << endl;
+    media = soma / n;
+    cout << fixed << setprecision(2);
+    cout << "MEDIA= " << media << endl;
+    
+   
+ return 0;
+}
+    

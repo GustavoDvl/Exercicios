@@ -1,0 +1,26 @@
+ #include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+int main() {
+
+int inicio, final, duracao;
+
+  cout <<"Hora inicia: " << endl;
+  cin >> inicio;
+
+  cout <<"Hora Final: " << endl;
+  cin >> final;
+
+  if (inicio < final){
+    duracao = final - inicio;
+    } else{
+    duracao = (24 - inicio) + final;
+    }
+  cout <<"O jogo durou: " << duracao << " horas " << endl;
+  
+    
+  
+
+  }
